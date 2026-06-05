@@ -1,0 +1,28 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## Type	Function: REAL
+
+| | |
+|:---|:---|
+| **Input	RES** | REAL (measured resistance in ohms) |
+| **R0** | REAL (resistance at 0° C) |
+| **Output** | REAL (measured temperature) |
+| | TEMP_PT calculates the temperature of a PT-resistance from the RES sensor input values (measured resistance value) and R0 (resistance at 0°C). If the inputs has a temperature outside the range of -200.. + 850°C, at the output the temperature output +10000.0°C  is passed. |
+| **The calculation is done using the formula** |  |
+| | for temperatures > 0 °C |
+| | RES_PT = R0 * (1 + A*T + B*T²) |
+| | and for temperatures below 0 ° C |
+| | RES_PT = R0 * (1 + A*T + B*T² + C*(T-100)*T³ |
+| | A = 3.90802E-3; B = -5.80195E-7; C = -427350E-12 |
+
+![temp_pt](temp_pt.gif)
+
+![temp_pt_table](temp_pt_table.gif)

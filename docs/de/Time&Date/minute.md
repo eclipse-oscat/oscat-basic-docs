@@ -1,0 +1,26 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## MINUTE
+
+| | |
+|:---|:---|
+| **Type	Funktion** | INT |
+| **Input	ITOD** | TIMEOFDAY (Tageszeit) |
+| **Output** | INT (aktuelle Minute) |
+| | Die Funktion MINUTE extrahiert die aktuelle Minute aus der Tageszeit. |
+
+![minute](minute.gif)
+
+**Beispiel:**
+
+```iecst
+MINUTE(22:55:13) = 55
+```

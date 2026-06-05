@@ -1,0 +1,218 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## HOLIDAY_DATA
+
+| | | |
+|:---|:---|:---|
+| ***.NAME** | STRING(30) | Name of the holiday |
+| ***.DAY** | SINT | Day of public holiday |
+| ***.MONTH** | SINT | Month of the holy day |
+| ***.USE** | SINT | activates the holyday (0=off, 1=on) |
+
+The structure HOLIDAY_DATA  is used to define and describe holidays.
+
+The structure is used by modules Calendar_calc and HOLYDAY by using a array of type HOLYDAY_DATA for definition of the annual holydays
+
+There are 3 different types of definitions:
+
+Day 1-.31, MONTH 1..12, USE 1 (public holiday on a fixed date)
+
+DAY ±X , MONTH, 0, USE 1 (holiday is X days before or after Easter)
+
+Day 1..31, MONTH 1..12, USE -7 ..- 1 (public holiday on a weekday before a date, herein is -1 Monday and -7 Sunday.
+
+**Example:**
+
+Examples:
+
+(NAME:= 'New Year', Day:= 1, MONTH:= 1, USE:= 1) holiday with a fixed date USE = 1 means it is active.
+
+(NAME:= 'New Year', Day:= 1, MONTH:= 1, USE:= 1) holiday with a fixed date USE = 0 means it is not active.
+
+(NAME:= 'Karfreitag', DAY:= -2, MONTH:= 0, USE: = 1) holiday with a fixed offset from Easter Sunday, in this case, the Good Friday 2 days before Easter Sunday.
+
+(NAME:= 'Buss und Bettag ", DAY:= 23, MONTH:= 11, USE: = -3) holiday on the last Wednesday before the 23.11.yyyy of a year.
+
+examples of holyday definitions:
+
+Array of Bavarian Holidays
+
+HOLIDAY_DE: ARRAY [0..29] OF HOLIDAY_DATA:= (name:= 'New Year', day:= 1, month: = 1, use: = 1).
+
+(Name:= 'Three Kings', Day:= 6, month:= 1 use:= 1),
+
+(Name: = 'Good Friday', day:= -2, month: = 0, use: = 1),
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1),
+
+(Name:= 'Easter Monday', day:= 1, month:= 0, use:= 1),
+
+(Name:= 'Labor Day', day:= 1, month:= 5, use:= 1),
+
+(Name:= 'Ascension', day:= 39, month:= 0, use:= 1),
+
+(Name:= 'Pentecost', day:= 49, month:= 0, use:= 1)
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1)
+
+(Name:= 'Corpus Christi', day:= 60, month:= 0, use:= 1)
+
+(Name:= 'Peace of Augsburg', day:= 8, month:= 8, use:= 0)
+
+(Name:= 'Assumption', day:= 15, month:= 8, use:= 1)
+
+(Name:= 'Day of German Unity', day:= 3, month:= 10, use:= 1)
+
+(Name:= 'Reformation', day:= 31, month:= 10, use:= 0)
+
+(Name:= 'All Saints' Day:= 1, month:= 11, use:= 1)
+
+(Name:= 'Buss und Bettag', day:= 23, month: = 11, use:= 0)
+
+(Name:= '1. Christmas Day', day:= 25, month:= 12, use:= 1)
+
+(Name:= '2. Christmas day ', day:= 26, month: = 12, use:= 1)
+
+Array of Austrian Holidays
+
+HOLIDAY_AT: ARRAY [0..29] OF HOLIDAY_DATA:= (name:= 'New Year', day:= 1, month:= 1, use:= 1).
+
+(Name:= 'Three Kings', Day:= 6, month:= 1 use:= 1),
+
+(Name: = 'Good Friday', day:= -2, month: = 0, use: = 1),
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1),
+
+(Name:= 'Easter Monday', day:= 1, month:= 0, use:= 1),
+
+(Name:= 'Ascension', day:= 39, month:= 0, use:= 1),
+
+(Name:= 'Pentecost', day:= 49, month:= 0, use:= 1)
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1)
+
+(Name:= 'Corpus Christi', day:= 60, month:= 0, use:= 1)
+
+(Name: ='', day: = 8, month: = 8, use: = 0)
+
+(Name:= 'Assumption', day:= 15, month:= 8, use:= 1)
+
+(Name:='', day:= 3, month:= 10, use:= 0)
+
+(Name:='', day:= 31, month:= 10, use:= 0)
+
+(Name:= 'All Saints' Day:= 1, month:= 11, use:= 1)
+
+(Name:= 'Immaculate Conception', day:= 8, month:= 12, use:= 1)
+
+(Name:= '1. Christmas Day', day:= 25, month:= 12, use:= 1)
+
+(Name:= '2. Christmas day ', day:= 26, month: = 12, use:= 1)
+
+French Holidays
+
+HOLIDAY_FR: ARRAY [0..29] OF HOLIDAY_DATA := (name: = 'Nouvel an', day:= 1, month:= 1, use:= 1)
+
+(Name:= 'St Valentine', day:= 14, month:= 2, use:= 0)
+
+(Name:= 'Vendredi Saint (alsace)', day:= -2, month:= 0, use:= 0)
+
+(Name:= 'Dimanche de Pâques ", day:= 0, month:= 0, use:= 1)
+
+(Name:= 'Lundi de Pâques', day:= 1, month:= 0, use:= 1)
+
+(Name:= 'Jeudi de Ascension', day:= 39, month:= 0, use:= 1)
+
+(Name:= 'dimanche de Pentecôte', day:= 49, month:= 0, use:= 1)
+
+(Name:= 'jeudi de la Trinité', day:= 60, month:= 0, use:= 0)
+
+(Name:= 'Fête du Travail ", day:= 1 month:= 5, use:= 1)
+
+(Name:= 'Victoire 1945', day:= 8, month:= 5, use:= 1)
+
+(Name:= 'Prise de la Bastille', day:= 14, month:= 7, use:= 1)
+
+(Name:= '15 Août 1944 ', day:= 15, month:= 8, use:= 1)
+
+(Name:= 'Halloween', day:= 31, month:= 10, use:= 0)
+
+(Name:= 'Armistice 1918', day:= 11, month:= 11, use:= 1)
+
+(Name:= 'Noël', day:= 25, month:= 12, use:= 1)
+
+(Name:= 'Saint Etienne (Alsace)', day:= 26, month:= 12, use:= 0)
+
+(Name:= 'Fête de la musique', day:= 21, month:= 6, use:= 0)
+
+Belgium german language
+
+HOLIDAY_BED: ARRAY [0..29] OF HOLIDAY_DATA:=	(Name:= 'New Year', day:= 1, month:= 1, use:= 1)
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1),
+
+(Name:= 'Easter Monday', day:= 1, month:= 0, use:= 1),
+
+(Name:= 'Labor Day', day:= 1, month:= 5, use:= 1),
+
+(Name:= 'Ascension', day:= 39, month:= 0, use:= 1),
+
+(Name:= 'Pentecost', day:= 49, month:= 0, use:= 1)
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1)
+
+(Name:= 'national day', day:= 21, month:= 7, use:= 1)
+
+(Name:= 'Assumption', day:= 15, month:= 8, use:= 1)
+
+(Name:= 'All Saints' Day:= 1, month:= 11, use:= 1)
+
+(Name:= 'DG holiday', day:= 15, month:= 11, use:= 1)
+
+(Name:= 'Christmas Eve', day:= 24, month:= 12, use:= 1)
+
+(Name:= '1. Christmas Day', day:= 25, month:= 12, use:= 1)
+
+(Name:= '2. Christmas day ', day:= 26, month: = 12, use:= 1)
+
+(Name:= 'New Year', day:= 31, month:= 12, use:= 1);
+
+South Tyrol, italy
+
+HOLIDAY_DE: ARRAY [0..29] OF HOLIDAY_DATA:= (name:= 'New Year', day:= 1, month:= 1, use:= 1).
+
+(Name:= 'Three Kings', Day:= 6, month:= 1 use:= 1),
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1),
+
+(Name:= 'Easter Monday', day:= 1, month:= 0, use:= 1),
+
+(Name:= 'tday to be exempted in Italy', day:= 25, month:= 4, use:= 1)
+
+(Name:= 'Labor Day', day:= 1, month:= 5, use:= 1),
+
+(Name:= 'Pentecost', day:= 49, month:= 0, use:= 1)
+
+(Name:= 'Easter Sunday', day:= 0, month:= 0, use:= 1)
+
+(Name:= 'Day of the Republic of Italy', day:= 2, month:= 6,  use:= 1)
+
+(Name:= 'Assumption', day:= 15, month:= 8, use:= 1)
+
+(Name:= 'All Saints' Day:= 1, month:= 11, use:= 1)
+
+(Name:= 'Immaculate Conception', day:= 8, month:= 12, use:= 1)
+
+(Name:= 'Christmas Eve', day:= 24, month:= 12, use:= 1)
+
+(Name:= '1. Christmas Day', day:= 25, month:= 12, use:= 1)
+
+(Name:= '2. Stephen day', day:= 26, month:= 12, use:= 1); *)
