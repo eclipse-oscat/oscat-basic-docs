@@ -1,0 +1,543 @@
+site_name: OSCAT Basic Dokumentation
+site_url: https://oscat-basic.readthedocs.io
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - search.suggest
+  - search.highlight
+plugins:
+- search
+- i18n:
+    docs_structure: folder
+    languages:
+    - locale: de
+      name: Deutsch
+      build: true
+      default: true
+    - locale: en
+      name: English
+      build: true
+nav:
+- Home: de/index.md
+- Buffer Management:
+  - BUFFER_COMP: de/Buffer Management/buffer_comp.md
+  - BUFFER_SEARCH: de/Buffer Management/buffer_search.md
+  - BUFFER_TO_STRING: de/Buffer Management/buffer_to_string.md
+  - _BUFFER_INSERT: de/Buffer Management/_buffer_insert.md
+  - _BUFFER_UPPERCASE: de/Buffer Management/_buffer_uppercase.md
+  - _STRING_TO_BUFFER: de/Buffer Management/_string_to_buffer.md
+- Engineering:
+  - Control:
+    - BAND_B: de/Engineering/Control/band_b.md
+    - CONTROL_SET1: de/Engineering/Control/control_set1.md
+    - CONTROL_SET2: de/Engineering/Control/control_set2.md
+    - CTRL_IN: de/Engineering/Control/ctrl_in.md
+    - CTRL_OUT: de/Engineering/Control/ctrl_out.md
+    - CTRL_PI: de/Engineering/Control/ctrl_pi.md
+    - CTRL_PID: de/Engineering/Control/ctrl_pid.md
+    - CTRL_PWM: de/Engineering/Control/ctrl_pwm.md
+    - DEAD_BAND: de/Engineering/Control/dead_band.md
+    - DEAD_BAND_A: de/Engineering/Control/dead_band_a.md
+    - DEAD_ZONE: de/Engineering/Control/dead_zone.md
+    - DEAD_ZONE2: de/Engineering/Control/dead_zone2.md
+    - FT_DERIV: de/Engineering/Control/ft_deriv.md
+    - FT_IMP: de/Engineering/Control/ft_imp.md
+    - FT_INT: de/Engineering/Control/ft_int.md
+    - FT_INT2: de/Engineering/Control/ft_int2.md
+    - FT_PD: de/Engineering/Control/ft_pd.md
+    - FT_PDT1: de/Engineering/Control/ft_pdt1.md
+    - FT_PI: de/Engineering/Control/ft_pi.md
+    - FT_PID: de/Engineering/Control/ft_pid.md
+    - FT_PIDW: de/Engineering/Control/ft_pidw.md
+    - FT_PIDWL: de/Engineering/Control/ft_pidwl.md
+    - FT_PIW: de/Engineering/Control/ft_piw.md
+    - FT_PIWL: de/Engineering/Control/ft_piwl.md
+    - FT_PT1: de/Engineering/Control/ft_pt1.md
+    - FT_PT2: de/Engineering/Control/ft_pt2.md
+    - FT_TN16: de/Engineering/Control/ft_tn16.md
+    - FT_TN64: de/Engineering/Control/ft_tn64.md
+    - FT_TN8: de/Engineering/Control/ft_tn8.md
+    - HYST: de/Engineering/Control/hyst.md
+    - HYST_1: de/Engineering/Control/hyst_1.md
+    - HYST_2: de/Engineering/Control/hyst_2.md
+    - HYST_3: de/Engineering/Control/hyst_3.md
+    - INTEGRATE: de/Engineering/Control/integrate.md
+  - Conversion:
+    - ASTRO: de/Engineering/Conversion/astro.md
+    - BFT_TO_MS: de/Engineering/Conversion/bft_to_ms.md
+    - C_TO_F: de/Engineering/Conversion/c_to_f.md
+    - C_TO_K: de/Engineering/Conversion/c_to_k.md
+    - DEG_TO_DIR: de/Engineering/Conversion/deg_to_dir.md
+    - DIR_TO_DEG: de/Engineering/Conversion/dir_to_deg.md
+    - ENERGY: de/Engineering/Conversion/energy.md
+    - F_TO_C: de/Engineering/Conversion/f_to_c.md
+    - F_TO_OM: de/Engineering/Conversion/f_to_om.md
+    - F_TO_PT: de/Engineering/Conversion/f_to_pt.md
+    - GEO_TO_DEG: de/Engineering/Conversion/geo_to_deg.md
+    - KMH_TO_MS: de/Engineering/Conversion/kmh_to_ms.md
+    - K_TO_C: de/Engineering/Conversion/k_to_c.md
+    - LENGTH: de/Engineering/Conversion/length.md
+    - MS_TO_BFT: de/Engineering/Conversion/ms_to_bft.md
+    - MS_TO_KMH: de/Engineering/Conversion/ms_to_kmh.md
+    - OM_TO_F: de/Engineering/Conversion/om_to_f.md
+    - PRESSURE: de/Engineering/Conversion/pressure.md
+    - PT_TO_F: de/Engineering/Conversion/pt_to_f.md
+    - SPEED: de/Engineering/Conversion/speed.md
+    - TEMPERATURE: de/Engineering/Conversion/temperature.md
+  - automation:
+    - DRIVER_1: de/Engineering/automation/driver_1.md
+    - DRIVER_4: de/Engineering/automation/driver_4.md
+    - DRIVER_4C: de/Engineering/automation/driver_4c.md
+    - FLOW_CONTROL: de/Engineering/automation/flow_control.md
+    - FT_PROFILE: de/Engineering/automation/ft_profile.md
+    - INC_DEC: de/Engineering/automation/inc_dec.md
+    - INTERLOCK: de/Engineering/automation/interlock.md
+    - INTERLOCK_4: de/Engineering/automation/interlock_4.md
+    - MANUAL: de/Engineering/automation/manual.md
+    - MANUAL_1: de/Engineering/automation/manual_1.md
+    - MANUAL_2: de/Engineering/automation/manual_2.md
+    - MANUAL_4: de/Engineering/automation/manual_4.md
+    - PARSET: de/Engineering/automation/parset.md
+    - PARSET2: de/Engineering/automation/parset2.md
+    - SIGNAL: de/Engineering/automation/signal.md
+    - SIGNAL_4: de/Engineering/automation/signal_4.md
+    - SRAMP: de/Engineering/automation/sramp.md
+    - TUNE: de/Engineering/automation/tune.md
+    - TUNE2: de/Engineering/automation/tune2.md
+  - measurements:
+    - ALARM_2: de/Engineering/measurements/alarm_2.md
+    - BAR_GRAPH: de/Engineering/measurements/bar_graph.md
+    - CALIBRATE: de/Engineering/measurements/calibrate.md
+    - CYCLE_TIME: de/Engineering/measurements/cycle_time.md
+    - DT_SIMU: de/Engineering/measurements/dt_simu.md
+    - FLOW_METER: de/Engineering/measurements/flow_meter.md
+    - METER: de/Engineering/measurements/meter.md
+    - METER_STAT: de/Engineering/measurements/meter_stat.md
+    - M_D: de/Engineering/measurements/m_d.md
+    - M_T: de/Engineering/measurements/m_t.md
+    - M_TX: de/Engineering/measurements/m_tx.md
+    - ONTIME: de/Engineering/measurements/ontime.md
+    - TC_MS: de/Engineering/measurements/tc_ms.md
+    - TC_S: de/Engineering/measurements/tc_s.md
+    - TC_US: de/Engineering/measurements/tc_us.md
+    - T_PLC_MS: de/Engineering/measurements/t_plc_ms.md
+    - T_PLC_US: de/Engineering/measurements/t_plc_us.md
+  - sensor:
+    - MULTI_IN: de/Engineering/sensor/multi_in.md
+    - RES_NI: de/Engineering/sensor/res_ni.md
+    - RES_NTC: de/Engineering/sensor/res_ntc.md
+    - RES_PT: de/Engineering/sensor/res_pt.md
+    - RES_SI: de/Engineering/sensor/res_si.md
+    - SENSOR_INT: de/Engineering/sensor/sensor_int.md
+    - TEMP_NI: de/Engineering/sensor/temp_ni.md
+    - TEMP_NTC: de/Engineering/sensor/temp_ntc.md
+    - TEMP_PT: de/Engineering/sensor/temp_pt.md
+    - TEMP_SI: de/Engineering/sensor/temp_si.md
+  - signal generators:
+    - GEN_PULSE: de/Engineering/signal generators/gen_pulse.md
+    - GEN_PW2: de/Engineering/signal generators/gen_pw2.md
+    - GEN_RDM: de/Engineering/signal generators/gen_rdm.md
+    - GEN_RDT: de/Engineering/signal generators/gen_rdt.md
+    - GEN_RMP: de/Engineering/signal generators/gen_rmp.md
+    - GEN_SIN: de/Engineering/signal generators/gen_sin.md
+    - GEN_SQR: de/Engineering/signal generators/gen_sqr.md
+    - PWM_DC: de/Engineering/signal generators/pwm_dc.md
+    - PWM_PW: de/Engineering/signal generators/pwm_pw.md
+    - RMP_B: de/Engineering/signal generators/rmp_b.md
+    - RMP_SOFT: de/Engineering/signal generators/rmp_soft.md
+    - RMP_W: de/Engineering/signal generators/rmp_w.md
+    - _RMP_B: de/Engineering/signal generators/_rmp_b.md
+    - _RMP_NEXT: de/Engineering/signal generators/_rmp_next.md
+    - _RMP_W: de/Engineering/signal generators/_rmp_w.md
+  - signal processing:
+    - AIN: de/Engineering/signal processing/ain.md
+    - AIN1: de/Engineering/signal processing/ain1.md
+    - AOUT: de/Engineering/signal processing/aout.md
+    - AOUT1: de/Engineering/signal processing/aout1.md
+    - BYTE_TO_RANGE: de/Engineering/signal processing/byte_to_range.md
+    - DELAY: de/Engineering/signal processing/delay.md
+    - DELAY_4: de/Engineering/signal processing/delay_4.md
+    - FADE: de/Engineering/signal processing/fade.md
+    - FILTER_DW: de/Engineering/signal processing/filter_dw.md
+    - FILTER_I: de/Engineering/signal processing/filter_i.md
+    - FILTER_MAV_DW: de/Engineering/signal processing/filter_mav_dw.md
+    - FILTER_MAV_W: de/Engineering/signal processing/filter_mav_w.md
+    - FILTER_W: de/Engineering/signal processing/filter_w.md
+    - FILTER_WAV: de/Engineering/signal processing/filter_wav.md
+    - MIX: de/Engineering/signal processing/mix.md
+    - MUX_R2: de/Engineering/signal processing/mux_r2.md
+    - MUX_R4: de/Engineering/signal processing/mux_r4.md
+    - OFFSET: de/Engineering/signal processing/offset.md
+    - OFFSET2: de/Engineering/signal processing/offset2.md
+    - OVERRIDE: de/Engineering/signal processing/override.md
+    - RANGE_TO_BYTE: de/Engineering/signal processing/range_to_byte.md
+    - SCALE: de/Engineering/signal processing/scale.md
+    - SCALE_B: de/Engineering/signal processing/scale_b.md
+    - SCALE_B2: de/Engineering/signal processing/scale_b2.md
+    - SCALE_B4: de/Engineering/signal processing/scale_b4.md
+    - SCALE_B8: de/Engineering/signal processing/scale_b8.md
+    - SCALE_D: de/Engineering/signal processing/scale_d.md
+    - SCALE_R: de/Engineering/signal processing/scale_r.md
+    - SCALE_X2: de/Engineering/signal processing/scale_x2.md
+    - SCALE_X4: de/Engineering/signal processing/scale_x4.md
+    - SCALE_X8: de/Engineering/signal processing/scale_x8.md
+    - SEL2_OF_3: de/Engineering/signal processing/sel2_of_3.md
+    - SEL2_OF_3B: de/Engineering/signal processing/sel2_of_3b.md
+    - SH: de/Engineering/signal processing/sh.md
+    - SH_1: de/Engineering/signal processing/sh_1.md
+    - SH_2: de/Engineering/signal processing/sh_2.md
+    - SH_T: de/Engineering/signal processing/sh_t.md
+    - STAIR: de/Engineering/signal processing/stair.md
+    - STAIR2: de/Engineering/signal processing/stair2.md
+    - TREND: de/Engineering/signal processing/trend.md
+    - TREND_DW: de/Engineering/signal processing/trend_dw.md
+- List Processing:
+  - LIST_ADD: de/List Processing/list_add.md
+  - LIST_CLEAN: de/List Processing/list_clean.md
+  - LIST_GET: de/List Processing/list_get.md
+  - LIST_INSERT: de/List Processing/list_insert.md
+  - LIST_LEN: de/List Processing/list_len.md
+  - LIST_NEXT: de/List Processing/list_next.md
+  - LIST_RETRIEVE: de/List Processing/list_retrieve.md
+  - LIST_RETRIEVE_LAST: de/List Processing/list_retrieve_last.md
+- Logic:
+  - FF edge triggered:
+    - COUNT_BR: de/Logic/FF edge triggered/count_br.md
+    - COUNT_DR: de/Logic/FF edge triggered/count_dr.md
+    - FF_D2E: de/Logic/FF edge triggered/ff_d2e.md
+    - FF_D4E: de/Logic/FF edge triggered/ff_d4e.md
+    - FF_DRE: de/Logic/FF edge triggered/ff_dre.md
+    - FF_JKE: de/Logic/FF edge triggered/ff_jke.md
+    - FF_RSE: de/Logic/FF edge triggered/ff_rse.md
+    - SELECT_8: de/Logic/FF edge triggered/select_8.md
+    - SHR_4E: de/Logic/FF edge triggered/shr_4e.md
+    - SHR_4UDE: de/Logic/FF edge triggered/shr_4ude.md
+    - SHR_8PLE: de/Logic/FF edge triggered/shr_8ple.md
+    - SHR_8UDE: de/Logic/FF edge triggered/shr_8ude.md
+    - TOGGLE: de/Logic/FF edge triggered/toggle.md
+  - FF pulse triggered:
+    - STORE_8: de/Logic/FF pulse triggered/store_8.md
+  - Others:
+    - CRC_GEN: de/Logic/Others/crc_gen.md
+    - MATRIX: de/Logic/Others/matrix.md
+    - PIN_CODE: de/Logic/Others/pin_code.md
+  - gate logic:
+    - BCDC_TO_INT: de/Logic/gate logic/bcdc_to_int.md
+    - BIT_COUNT: de/Logic/gate logic/bit_count.md
+    - BIT_LOAD_B: de/Logic/gate logic/bit_load_b.md
+    - BIT_LOAD_B2: de/Logic/gate logic/bit_load_b2.md
+    - BIT_LOAD_DW: de/Logic/gate logic/bit_load_dw.md
+    - BIT_LOAD_DW2: de/Logic/gate logic/bit_load_dw2.md
+    - BIT_LOAD_W: de/Logic/gate logic/bit_load_w.md
+    - BIT_LOAD_W2: de/Logic/gate logic/bit_load_w2.md
+    - BIT_OF_DWORD: de/Logic/gate logic/bit_of_dword.md
+    - BIT_TOGGLE_B: de/Logic/gate logic/bit_toggle_b.md
+    - BIT_TOGGLE_DW: de/Logic/gate logic/bit_toggle_dw.md
+    - BIT_TOGGLE_W: de/Logic/gate logic/bit_toggle_w.md
+    - BYTE_OF_BIT: de/Logic/gate logic/byte_of_bit.md
+    - BYTE_OF_DWORD: de/Logic/gate logic/byte_of_dword.md
+    - BYTE_TO_BITS: de/Logic/gate logic/byte_to_bits.md
+    - BYTE_TO_GRAY: de/Logic/gate logic/byte_to_gray.md
+    - CHECK_PARITY: de/Logic/gate logic/check_parity.md
+    - CHK_REAL: de/Logic/gate logic/chk_real.md
+    - DEC_2: de/Logic/gate logic/dec_2.md
+    - DEC_4: de/Logic/gate logic/dec_4.md
+    - DEC_8: de/Logic/gate logic/dec_8.md
+    - DWORD_OF_BYTE: de/Logic/gate logic/dword_of_byte.md
+    - DWORD_OF_WORD: de/Logic/gate logic/dword_of_word.md
+    - DW_TO_REAL: de/Logic/gate logic/dw_to_real.md
+    - GRAY_TO_BYTE: de/Logic/gate logic/gray_to_byte.md
+    - INT_TO_BCDC: de/Logic/gate logic/int_to_bcdc.md
+    - MUX_2: de/Logic/gate logic/mux_2.md
+    - MUX_4: de/Logic/gate logic/mux_4.md
+    - PARITY: de/Logic/gate logic/parity.md
+    - REAL_TO_DW: de/Logic/gate logic/real_to_dw.md
+    - REFLECT: de/Logic/gate logic/reflect.md
+    - REVERSE: de/Logic/gate logic/reverse.md
+    - SHL1: de/Logic/gate logic/shl1.md
+    - SHR1: de/Logic/gate logic/shr1.md
+    - SWAP_BYTE: de/Logic/gate logic/swap_byte.md
+    - SWAP_BYTE2: de/Logic/gate logic/swap_byte2.md
+    - WORD_OF_BYTE: de/Logic/gate logic/word_of_byte.md
+    - WORD_OF_DWORD: de/Logic/gate logic/word_of_dword.md
+  - generators:
+    - A_TRIG: de/Logic/generators/a_trig.md
+    - B_TRIG: de/Logic/generators/b_trig.md
+    - CLICK_CNT: de/Logic/generators/click_cnt.md
+    - CLICK_DEC: de/Logic/generators/click_dec.md
+    - CLK_DIV: de/Logic/generators/clk_div.md
+    - CLK_N: de/Logic/generators/clk_n.md
+    - CLK_PRG: de/Logic/generators/clk_prg.md
+    - CLK_PULSE: de/Logic/generators/clk_pulse.md
+    - CYCLE_4: de/Logic/generators/cycle_4.md
+    - D_TRIG: de/Logic/generators/d_trig.md
+    - GEN_BIT: de/Logic/generators/gen_bit.md
+    - GEN_SQ: de/Logic/generators/gen_sq.md
+    - SCHEDULER: de/Logic/generators/scheduler.md
+    - SCHEDULER_2: de/Logic/generators/scheduler_2.md
+    - SEQUENCE_4: de/Logic/generators/sequence_4.md
+    - SEQUENCE_64: de/Logic/generators/sequence_64.md
+    - SEQUENCE_8: de/Logic/generators/sequence_8.md
+    - TMAX: de/Logic/generators/tmax.md
+    - TMIN: de/Logic/generators/tmin.md
+    - TOF_1: de/Logic/generators/tof_1.md
+    - TONOF: de/Logic/generators/tonof.md
+    - TP_1: de/Logic/generators/tp_1.md
+    - TP_1D: de/Logic/generators/tp_1d.md
+    - TP_X: de/Logic/generators/tp_x.md
+  - memory:
+    - FIFO_16: de/Logic/memory/fifo_16.md
+    - FIFO_32: de/Logic/memory/fifo_32.md
+    - STACK_16: de/Logic/memory/stack_16.md
+    - STACK_32: de/Logic/memory/stack_32.md
+- Mathematical:
+  - Array:
+    - ARRAY_AVG: de/Mathematical/Array/array_avg.md
+    - ARRAY_GAV: de/Mathematical/Array/array_gav.md
+    - ARRAY_HAV: de/Mathematical/Array/array_hav.md
+    - ARRAY_MAX: de/Mathematical/Array/array_max.md
+    - ARRAY_MIN: de/Mathematical/Array/array_min.md
+    - ARRAY_SDV: de/Mathematical/Array/array_sdv.md
+    - ARRAY_SPR: de/Mathematical/Array/array_spr.md
+    - ARRAY_SUM: de/Mathematical/Array/array_sum.md
+    - ARRAY_TREND: de/Mathematical/Array/array_trend.md
+    - ARRAY_VAR: de/Mathematical/Array/array_var.md
+    - IS_SORTED: de/Mathematical/Array/is_sorted.md
+    - _ARRAY_ABS: de/Mathematical/Array/_array_abs.md
+    - _ARRAY_ADD: de/Mathematical/Array/_array_add.md
+    - _ARRAY_INIT: de/Mathematical/Array/_array_init.md
+    - _ARRAY_MEDIAN: de/Mathematical/Array/_array_median.md
+    - _ARRAY_MUL: de/Mathematical/Array/_array_mul.md
+    - _ARRAY_SHUFFLE: de/Mathematical/Array/_array_shuffle.md
+    - _ARRAY_SORT: de/Mathematical/Array/_array_sort.md
+  - Complex:
+    - CABS: de/Mathematical/Complex/cabs.md
+    - CACOS: de/Mathematical/Complex/cacos.md
+    - CACOSH: de/Mathematical/Complex/cacosh.md
+    - CADD: de/Mathematical/Complex/cadd.md
+    - CARG: de/Mathematical/Complex/carg.md
+    - CASIN: de/Mathematical/Complex/casin.md
+    - CASINH: de/Mathematical/Complex/casinh.md
+    - CATAN: de/Mathematical/Complex/catan.md
+    - CATANH: de/Mathematical/Complex/catanh.md
+    - CCON: de/Mathematical/Complex/ccon.md
+    - CCOS: de/Mathematical/Complex/ccos.md
+    - CCOSH: de/Mathematical/Complex/ccosh.md
+    - CDIV: de/Mathematical/Complex/cdiv.md
+    - CEXP: de/Mathematical/Complex/cexp.md
+    - CINV: de/Mathematical/Complex/cinv.md
+    - CLOG: de/Mathematical/Complex/clog.md
+    - CMUL: de/Mathematical/Complex/cmul.md
+    - CPOL: de/Mathematical/Complex/cpol.md
+    - CPOW: de/Mathematical/Complex/cpow.md
+    - CSET: de/Mathematical/Complex/cset.md
+    - CSIN: de/Mathematical/Complex/csin.md
+    - CSINH: de/Mathematical/Complex/csinh.md
+    - CSQRT: de/Mathematical/Complex/csqrt.md
+    - CSUB: de/Mathematical/Complex/csub.md
+    - CTAN: de/Mathematical/Complex/ctan.md
+    - CTANH: de/Mathematical/Complex/ctanh.md
+  - Double Precision:
+    - R2_ABS: de/Mathematical/Double Precision/r2_abs.md
+    - R2_ADD: de/Mathematical/Double Precision/r2_add.md
+    - R2_ADD2: de/Mathematical/Double Precision/r2_add2.md
+    - R2_MUL: de/Mathematical/Double Precision/r2_mul.md
+    - R2_SET: de/Mathematical/Double Precision/r2_set.md
+  - Geometry:
+    - CIRCLE_A: de/Mathematical/Geometry/circle_a.md
+    - CIRCLE_C: de/Mathematical/Geometry/circle_c.md
+    - CIRCLE_SEG: de/Mathematical/Geometry/circle_seg.md
+    - CONE_V: de/Mathematical/Geometry/cone_v.md
+    - ELLIPSE_A: de/Mathematical/Geometry/ellipse_a.md
+    - ELLIPSE_C: de/Mathematical/Geometry/ellipse_c.md
+    - SPHERE_V: de/Mathematical/Geometry/sphere_v.md
+    - TRIANGLE_A: de/Mathematical/Geometry/triangle_a.md
+  - Vektormathematik:
+    - V3_ABS: de/Mathematical/Vektormathematik/v3_abs.md
+    - V3_ADD: de/Mathematical/Vektormathematik/v3_add.md
+    - V3_ANG: de/Mathematical/Vektormathematik/v3_ang.md
+    - V3_DPRO: de/Mathematical/Vektormathematik/v3_dpro.md
+    - V3_NORM: de/Mathematical/Vektormathematik/v3_norm.md
+    - V3_NUL: de/Mathematical/Vektormathematik/v3_nul.md
+    - V3_PAR: de/Mathematical/Vektormathematik/v3_par.md
+    - V3_REV: de/Mathematical/Vektormathematik/v3_rev.md
+    - V3_SMUL: de/Mathematical/Vektormathematik/v3_smul.md
+    - V3_SUB: de/Mathematical/Vektormathematik/v3_sub.md
+    - V3_XANG: de/Mathematical/Vektormathematik/v3_xang.md
+    - V3_XPRO: de/Mathematical/Vektormathematik/v3_xpro.md
+    - V3_YANG: de/Mathematical/Vektormathematik/v3_yang.md
+    - V3_ZANG: de/Mathematical/Vektormathematik/v3_zang.md
+  - functions:
+    - FRMP_B: de/Mathematical/functions/frmp_b.md
+    - FT_AVG: de/Mathematical/functions/ft_avg.md
+    - FT_MIN_MAX: de/Mathematical/functions/ft_min_max.md
+    - FT_RMP: de/Mathematical/functions/ft_rmp.md
+    - F_LIN: de/Mathematical/functions/f_lin.md
+    - F_LIN2: de/Mathematical/functions/f_lin2.md
+    - F_POLY: de/Mathematical/functions/f_poly.md
+    - F_POWER: de/Mathematical/functions/f_power.md
+    - F_QUAD: de/Mathematical/functions/f_quad.md
+    - LINEAR_INT: de/Mathematical/functions/linear_int.md
+    - POLYNOM_INT: de/Mathematical/functions/polynom_int.md
+- Other:
+  - ESR_COLLECT: de/Other/esr_collect.md
+  - ESR_MON_B8: de/Other/esr_mon_b8.md
+  - ESR_MON_R4: de/Other/esr_mon_r4.md
+  - ESR_MON_X8: de/Other/esr_mon_x8.md
+  - OSCAT_VERSION: de/Other/oscat_version.md
+  - STATUS_TO_ESR: de/Other/status_to_esr.md
+- String:
+  - BIN_TO_BYTE: de/String/bin_to_byte.md
+  - BIN_TO_DWORD: de/String/bin_to_dword.md
+  - BYTE_TO_STRB: de/String/byte_to_strb.md
+  - BYTE_TO_STRH: de/String/byte_to_strh.md
+  - CAPITALIZE: de/String/capitalize.md
+  - CHARCODE: de/String/charcode.md
+  - CHARNAME: de/String/charname.md
+  - CHR_TO_STRING: de/String/chr_to_string.md
+  - CLEAN: de/String/clean.md
+  - CODE: de/String/code.md
+  - COUNT_CHAR: de/String/count_char.md
+  - COUNT_SUBSTRING: de/String/count_substring.md
+  - DEC_TO_BYTE: de/String/dec_to_byte.md
+  - DEC_TO_DWORD: de/String/dec_to_dword.md
+  - DEC_TO_INT: de/String/dec_to_int.md
+  - DEL_CHARS: de/String/del_chars.md
+  - DT_TO_STRF: de/String/dt_to_strf.md
+  - DWORD_TO_STRB: de/String/dword_to_strb.md
+  - DWORD_TO_STRF: de/String/dword_to_strf.md
+  - DWORD_TO_STRH: de/String/dword_to_strh.md
+  - EXEC: de/String/exec.md
+  - FILL: de/String/fill.md
+  - FINDB: de/String/findb.md
+  - FINDB_NONUM: de/String/findb_nonum.md
+  - FINDB_NUM: de/String/findb_num.md
+  - FINDP: de/String/findp.md
+  - FIND_CHAR: de/String/find_char.md
+  - FIND_CTRL: de/String/find_ctrl.md
+  - FIND_NONUM: de/String/find_nonum.md
+  - FIND_NUM: de/String/find_num.md
+  - FIX: de/String/fix.md
+  - FLOAT_TO_REAL: de/String/float_to_real.md
+  - FSTRING_TO_BYTE: de/String/fstring_to_byte.md
+  - FSTRING_TO_DT: de/String/fstring_to_dt.md
+  - FSTRING_TO_DWORD: de/String/fstring_to_dword.md
+  - FSTRING_TO_MONTH: de/String/fstring_to_month.md
+  - FSTRING_TO_WEEK: de/String/fstring_to_week.md
+  - FSTRING_TO_WEEKDAY: de/String/fstring_to_weekday.md
+  - HEX_TO_BYTE: de/String/hex_to_byte.md
+  - HEX_TO_DWORD: de/String/hex_to_dword.md
+  - ISC_ALPHA: de/String/isc_alpha.md
+  - ISC_CTRL: de/String/isc_ctrl.md
+  - ISC_HEX: de/String/isc_hex.md
+  - ISC_LOWER: de/String/isc_lower.md
+  - ISC_NUM: de/String/isc_num.md
+  - ISC_UPPER: de/String/isc_upper.md
+  - IS_ALNUM: de/String/is_alnum.md
+  - IS_ALPHA: de/String/is_alpha.md
+  - IS_CC: de/String/is_cc.md
+  - IS_CTRL: de/String/is_ctrl.md
+  - IS_HEX: de/String/is_hex.md
+  - IS_LOWER: de/String/is_lower.md
+  - IS_NCC: de/String/is_ncc.md
+  - IS_NUM: de/String/is_num.md
+  - IS_UPPER: de/String/is_upper.md
+  - LOWERCASE: de/String/lowercase.md
+  - MESSAGE_4R: de/String/message_4r.md
+  - MESSAGE_8: de/String/message_8.md
+  - MIRROR: de/String/mirror.md
+  - MONTH_TO_STRING: de/String/month_to_string.md
+  - OCT_TO_BYTE: de/String/oct_to_byte.md
+  - OCT_TO_DWORD: de/String/oct_to_dword.md
+  - REAL_TO_STRF: de/String/real_to_strf.md
+  - REPLACE_ALL: de/String/replace_all.md
+  - REPLACE_CHARS: de/String/replace_chars.md
+  - REPLACE_UML: de/String/replace_uml.md
+  - TICKER: de/String/ticker.md
+  - TO_LOWER: de/String/to_lower.md
+  - TO_UML: de/String/to_uml.md
+  - TO_UPPER: de/String/to_upper.md
+  - TRIM: de/String/trim.md
+  - TRIM1: de/String/trim1.md
+  - TRIME: de/String/trime.md
+  - UPPERCASE: de/String/uppercase.md
+  - WEEKDAY_TO_STRING: de/String/weekday_to_string.md
+- Time&Date:
+  - CALENDAR_CALC: de/Time&Date/calendar_calc.md
+  - DATE_ADD: de/Time&Date/date_add.md
+  - DAYS_DELTA: de/Time&Date/days_delta.md
+  - DAYS_IN_MONTH: de/Time&Date/days_in_month.md
+  - DAYS_IN_YEAR: de/Time&Date/days_in_year.md
+  - DAY_OF_DATE: de/Time&Date/day_of_date.md
+  - DAY_OF_MONTH: de/Time&Date/day_of_month.md
+  - DAY_OF_WEEK: de/Time&Date/day_of_week.md
+  - DAY_OF_YEAR: de/Time&Date/day_of_year.md
+  - DAY_TO_TIME: de/Time&Date/day_to_time.md
+  - DCF77: de/Time&Date/dcf77.md
+  - DST: de/Time&Date/dst.md
+  - DT2_TO_SDT: de/Time&Date/dt2_to_sdt.md
+  - DT_TO_SDT: de/Time&Date/dt_to_sdt.md
+  - EASTER: de/Time&Date/easter.md
+  - EVENTS: de/Time&Date/events.md
+  - HOLIDAY: de/Time&Date/holiday.md
+  - HOUR: de/Time&Date/hour.md
+  - HOUR_OF_DT: de/Time&Date/hour_of_dt.md
+  - HOUR_TO_TIME: de/Time&Date/hour_to_time.md
+  - HOUR_TO_TOD: de/Time&Date/hour_to_tod.md
+  - JD2000: de/Time&Date/jd2000.md
+  - LEAP_DAY: de/Time&Date/leap_day.md
+  - LEAP_OF_DATE: de/Time&Date/leap_of_date.md
+  - LTIME_TO_UTC: de/Time&Date/ltime_to_utc.md
+  - MINUTE: de/Time&Date/minute.md
+  - MINUTE_OF_DT: de/Time&Date/minute_of_dt.md
+  - MINUTE_TO_TIME: de/Time&Date/minute_to_time.md
+  - MONTH_BEGIN: de/Time&Date/month_begin.md
+  - MONTH_END: de/Time&Date/month_end.md
+  - MONTH_OF_DATE: de/Time&Date/month_of_date.md
+  - MULTIME: de/Time&Date/multime.md
+  - PERIOD: de/Time&Date/period.md
+  - PERIOD2: de/Time&Date/period2.md
+  - REFRACTION: de/Time&Date/refraction.md
+  - RTC_2: de/Time&Date/rtc_2.md
+  - RTC_MS: de/Time&Date/rtc_ms.md
+  - SDT_TO_DATE: de/Time&Date/sdt_to_date.md
+  - SDT_TO_DT: de/Time&Date/sdt_to_dt.md
+  - SDT_TO_TOD: de/Time&Date/sdt_to_tod.md
+  - SECOND: de/Time&Date/second.md
+  - SECOND_OF_DT: de/Time&Date/second_of_dt.md
+  - SECOND_TO_TIME: de/Time&Date/second_to_time.md
+  - SET_DATE: de/Time&Date/set_date.md
+  - SET_DT: de/Time&Date/set_dt.md
+  - SET_TOD: de/Time&Date/set_tod.md
+  - SUN_MIDDAY: de/Time&Date/sun_midday.md
+  - SUN_POS: de/Time&Date/sun_pos.md
+  - SUN_TIME: de/Time&Date/sun_time.md
+  - TIMECHECK: de/Time&Date/timecheck.md
+  - UTC_TO_LTIME: de/Time&Date/utc_to_ltime.md
+  - WORK_WEEK: de/Time&Date/work_week.md
+  - YEAR_BEGIN: de/Time&Date/year_begin.md
+  - YEAR_END: de/Time&Date/year_end.md
+  - YEAR_OF_DATE: de/Time&Date/year_of_date.md
+markdown_extensions:
+- attr_list
+- md_in_html
+- tables
+- fenced_code
+- toc:
+    permalink: true

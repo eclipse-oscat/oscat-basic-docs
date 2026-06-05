@@ -1,0 +1,31 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## Type	Function module
+
+| | |
+|:---|:---|
+| **Input	I1** | BOOL (input 1) |
+| **I2** | BOOL (input 2) |
+| **TL** | TIME (lock time) |
+| **Output	Q1** | BOOL (output 1) |
+| **Q2** | BOOL (output 2) |
+| | The module INTERLOCK has 2 inputs I1 and I2 which passes to each of the outputs Q1 and Q2. Q1 and Q2, however, are interlocked so that only one output is set to TRUE. The time TL sets a dead time between the two outputs. An output can only be true if the other output was at least for the time TL FALSE. |
+
+![interlock](interlock.gif)
+
+![interlock_timing](interlock_timing.gif)
+
+| I1 | I2 | Q1 | Q2 |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 0 |

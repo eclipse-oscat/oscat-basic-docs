@@ -1,0 +1,20 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## IS_NUM
+
+| | |
+|:---|:---|
+| **Type	Function** | BOOL |
+| **Input	STR** | STRING (String input) |
+| **Output** | BOOL (TRUE if STR does not contain capital letters) |
+| | IS_NUM tests whether the string STR contains only numbers. If another character is found the function returns FALSE. If in STR are only numbers included, the function returns TRUE. Numbers are the character 0..9. |
+
+![isc_num](isc_num.gif)

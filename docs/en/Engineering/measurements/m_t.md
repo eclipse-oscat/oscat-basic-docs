@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2026 Hans Mühlbauer, Franz Höpfinger and others.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  https://www.eclipse.org/legal/epl-2.0
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+## Type	Function module
+
+| | |
+|:---|:---|
+| **Input	IN** | BOOL (Input) |
+| **TMAX** | TIME (Timeout für ET) |
+| **RST** | BOOL (Reset input) |
+| **Output	PT** | TIME (measured pulse duration from the rising to the 	falling edge) |
+| **ET** | TIME (Elapsed time since last rising edge) |
+| | M_T measures the time  how  long IN was TRUE. PT is the time from the rising edge of   signal IN to the falling edge of the IN signal. The Output ET passes the elapsed time since the last rising edge to falling edge. As long as the input signal is FALSE, ET = 0. M_T requires a rising edge to trigger the measurement. If at the first call IN is already TRUE, it is not seen as a rising edge. For more examples, see the description of M_TX. With TRUE at the input RST, the outputs can always be reset to 0. If ET reaches the value of TMAX, automatically a reset is generated in the module to reset all outputs to 0. TMAX is internally assigned with default value of T#10d and normally can be unconnected. |
+
+![m_t](m_t.gif)
+
+![m_t_diag](m_t_diag.gif)
