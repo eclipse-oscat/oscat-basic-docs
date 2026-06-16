@@ -16,4 +16,4 @@ The OSCAT library is an Open Source library for automation technology according 
 
 Please select a topic from the navigation.
 
-[Download documentation as PDF](https://eclipse-oscat.github.io/oscat-basic-docs/en/pdf/document.pdf)
+[Download documentation as PDF](https://eclipse-oscat.github.io/oscat-basic-docs/en/pdf/oscat-basic-docs-en.pdf)

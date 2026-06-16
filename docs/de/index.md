@@ -16,4 +16,4 @@ Die OSCAT Bibliothek ist eine Open Source Bibliothek für die Automatisierungste
 
 Bitte wählen Sie ein Thema aus der Navigation.
 
-[Dokumentation als PDF herunterladen](https://eclipse-oscat.github.io/oscat-basic-docs/de/pdf/document.pdf)
+[Dokumentation als PDF herunterladen](https://eclipse-oscat.github.io/oscat-basic-docs/de/pdf/oscat-basic-docs-de.pdf)
