@@ -21,11 +21,11 @@
 | | The following example demonstrates how ESR_COLLECT is connected with ESR modules. |
 | **The output ESR_OUT is made up as follows** |  |
 | **The ESR data includes the following** |  |
-| **[ESR_DATA](../Data Types/esr_data.md).TYP** | Data type, see table above |
-| **[ESR_DATA](../Data Types/esr_data.md).ADRESS** | up to 10 characters long  String  Identifier |
-| **[ESR_DATA](../Data Types/esr_data.md).DS** | Date stamp of type TIME DATA |
-| **[ESR_DATA](../Data Types/esr_data.md).TS** | Timestamp of type TIME (PLC  Timer  ) |
-| **[ESR_DATA](../Data Types/esr_data.md).DATA** | up to 8 bytes of data block |
+| **[ESR_DATA](../Data Types/esr_data.md) .TYP** | Data type, see table above |
+| **[ESR_DATA](../Data Types/esr_data.md) .ADRESS** | up to 10 characters long  String  Identifier |
+| **[ESR_DATA](../Data Types/esr_data.md) .DS** | Date stamp of type TIME DATA |
+| **[ESR_DATA](../Data Types/esr_data.md) .TS** | Timestamp of type TIME (PLC  Timer  ) |
+| **[ESR_DATA](../Data Types/esr_data.md) .DATA** | up to 8 bytes of data block |
 
 ![esr_collect](esr_collect.gif)
 

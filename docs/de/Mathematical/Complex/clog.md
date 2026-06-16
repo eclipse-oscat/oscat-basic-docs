@@ -14,7 +14,7 @@
 |:---|:---|
 | **Type	Funktion** | [COMPLEX](../../Data Types/complex.md) |
 | **Input	X** | [COMPLEX](../../Data Types/complex.md) (Eingangswert) |
-| **Output** | [COMPLEX](../../Data Types/complex.md)(Ergebnis) |
+| **Output** | [COMPLEX](../../Data Types/complex.md) (Ergebnis) |
 | | CLOG berechnet den natürlichen Logarithmus einer Komplexen Zahl zur Basis E. |
 | | CLOG(X) = LOG(e)(X). |
 

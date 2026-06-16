@@ -31,7 +31,6 @@
 ![crc_gen](crc_gen.gif)
 
 | CRC | PL | PN [Hex] | INIT [Hex] | REV IN | REV OUT | XOUT [Hex] |
-
 | --- | --- | --- | --- | --- | --- | --- |
 | CRC-3/ROHC | 3 | 3 | 7 | T | T | 0 |
 | CRC-4/ITU | 4 | 3 | 0 | T | T | 0 |

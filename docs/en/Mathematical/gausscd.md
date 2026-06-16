@@ -22,4 +22,4 @@
 
 ![gausscd](gausscd.gif)
 
-![gauss_eq](gauss_eq.jpg)
+![gausscd_eq](gausscd_eq.jpg)

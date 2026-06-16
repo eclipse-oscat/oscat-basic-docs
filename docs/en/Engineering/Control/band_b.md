@@ -17,6 +17,6 @@
 | **Output** | BYTE  (output value) |
 | | BAND_B hides at the input areas 0..255 the areas 0..B and 255-B.. 255, in this areas the output is 0 respectively 255. |
 
-![band_b%20diagramm](band_b%20diagramm.gif)
+![band_b_diagramm](band_b_diagramm.gif)
 
 ![band_b](band_b.gif)

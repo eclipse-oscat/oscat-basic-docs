@@ -21,5 +21,5 @@
 
 ![sh](sh.gif)
 
-![s_%20sample](s_%20sample.gif)
+![s__sample](s__sample.gif)
 ![sh_trace](sh_trace.gif)

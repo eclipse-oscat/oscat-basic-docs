@@ -13,7 +13,7 @@
 | | |
 |:---|:---|
 | **Input	X** | [COMPLEX](../../Data Types/complex.md)  (Input) |
-| **Y** | [COMPLEX](../../Data Types/complex.md)(Input value) |
+| **Y** | [COMPLEX(../../Data Types/complex.md) (Input value) |
 | **Output** | [COMPLEX](../../Data Types/complex.md) (result) |
 | | CADD adds two complex numbers X and Y. |
 

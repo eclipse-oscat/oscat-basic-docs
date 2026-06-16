@@ -21,11 +21,11 @@
 | | Das folgende Beispiel demonstriert, wie ESR_COLLECT mit ESR-Bausteinen zusammen geschaltet wird. |
 | **Der Ausgang ESR_OUT setzt sich wie folgt zusammen** |  |
 | **Die ESR Daten enthalten folgende Informationen** |  |
-| **[ESR_DATA](../Data Types/esr_data.md).TYP** | Datentyp siehe vorstehende Tabelle |
-| **[ESR_DATA](../Data Types/esr_data.md).ADRESS** | bis zu 10 Zeichen langer String Bezeichner |
-| **[ESR_DATA](../Data Types/esr_data.md).DS** | Datums Stempel von Typ DATATIME |
-| **[ESR_DATA](../Data Types/esr_data.md).TS** | Zeitstempel vom Typ TIME (SPS Timer) |
-| **[ESR_DATA](../Data Types/esr_data.md).DATA** | bis zu 8 Byte Datenblock |
+| **[ESR_DATA](../Data Types/esr_data.md) .TYP** | Datentyp siehe vorstehende Tabelle |
+| **[ESR_DATA](../Data Types/esr_data.md) .ADRESS** | bis zu 10 Zeichen langer String Bezeichner |
+| **[ESR_DATA](../Data Types/esr_data.md) .DS** | Datums Stempel von Typ DATATIME |
+| **[ESR_DATA](../Data Types/esr_data.md) .TS** | Zeitstempel vom Typ TIME (SPS Timer) |
+| **[ESR_DATA](../Data Types/esr_data.md) .DATA** | bis zu 8 Byte Datenblock |
 
 ![esr_collect](esr_collect.gif)
 

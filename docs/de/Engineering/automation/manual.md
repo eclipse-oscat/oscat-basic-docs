@@ -23,7 +23,7 @@
 
 ![manual](manual.gif)
 
-![manual sample](manual sample.gif)
+![manual_sample](manual_sample.gif)
 
 | IN | ON | OFF | Q |  |
 | --- | --- | --- | --- | --- |

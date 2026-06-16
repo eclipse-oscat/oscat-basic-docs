@@ -13,7 +13,7 @@
 | | |
 |:---|:---|
 | **Input	X** | [COMPLEX](../../Data Types/complex.md)  (Input) |
-| **Y** | [COMPLEX](../../Data Types/complex.md)(Input value) |
+| **Y** | [COMPLEX(../../Data Types/complex.md) (Input value) |
 | **Output** | [COMPLEX](../../Data Types/complex.md) (result) |
 | | CSUB Subtracts two complex numbers, Csub = X - Y. |
 

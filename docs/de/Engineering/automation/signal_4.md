@@ -25,4 +25,4 @@
 
 ![signal_4](signal_4.gif)
 
-![signal_4%20pattern](signal_4%20pattern.gif)
+![signal_4_pattern](signal_4_pattern.gif)

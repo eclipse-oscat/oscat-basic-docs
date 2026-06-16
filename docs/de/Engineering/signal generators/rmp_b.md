@@ -33,5 +33,5 @@
 ![rmp_b_sample](rmp_b_sample.gif)
 ![rmp_b_trace](rmp_b_trace.gif)
 
-![rmp_b_sample 2](rmp_b_sample 2.gif)
+![rmp_b_sample_2](rmp_b_sample_2.gif)
 ![rmp_b_trace2](rmp_b_trace2.gif)
