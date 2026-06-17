@@ -10,3 +10,7 @@
 
 # oscat-basic-docs
 OSCAT Basic Library Documentation (ReadTheDocs)
+
+- [📄 PDF Deutsch (oscat-basic-docs-de.pdf)](https://eclipse-oscat.github.io/oscat-basic-docs/de/pdf/oscat-basic-docs-de.pdf)
+- [📄 PDF English (oscat-basic-docs-en.pdf)](https://eclipse-oscat.github.io/oscat-basic-docs/en/pdf/oscat-basic-docs-en.pdf)
+- [GitHub Repository](https://github.com/eclipse-oscat/oscat-basic-docs)
